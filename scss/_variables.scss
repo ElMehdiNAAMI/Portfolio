@@ -4,10 +4,11 @@
 
 // Set a custom color
 $orange: #ffd700 !default;
-$brown: #0cce6b !default;
+$brown: #032b43 !default;
 
 // Set primary color to orange
 $primary: $orange !default;
+$secondary: $brown !default;
 
 // Font overrides
 $font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
