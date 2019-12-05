@@ -9594,14 +9594,14 @@ hr.light {
 
 #element {
   position: absolute;
-  z-index: 0;
-  left: 33vw;
-  top: 10vh;
-  height: 55vh;
-  width: 30vw;
+  z-index: -1;
+  left: -25px;
+  height: 220px;
+  width: 340px;
+  border: 5px solid rgba(255, 215, 0, 0.4);
+  border-radius: 30px;
   -webkit-animation: nudge 5s linear infinite alternate;
   animation: nudge 5s linear infinite alternate;
-  border: 1vw solid rgba(255, 215, 0, 0.4);
 }
 
 @-webkit-keyframes nudge {
