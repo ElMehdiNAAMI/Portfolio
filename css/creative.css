@@ -9595,13 +9595,13 @@ hr.light {
 #element {
   position: absolute;
   z-index: 0;
-  left: 5vw;
-  top: 22vh;
-  height: 60vh;
-  width: 25vw;
+  left: 33vw;
+  top: 10vh;
+  height: 55vh;
+  width: 30vw;
   -webkit-animation: nudge 5s linear infinite alternate;
   animation: nudge 5s linear infinite alternate;
-  border: 1vw solid rgba(255, 215, 0, 0.3);
+  border: 1vw solid rgba(255, 215, 0, 0.4);
 }
 
 @-webkit-keyframes nudge {
@@ -9705,6 +9705,10 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  height: 100vh;
+  min-height: 40rem;
+  padding-top: 72px;
+  padding-bottom: 0;
 }
 
 header.masthead div.container {
@@ -9712,16 +9716,8 @@ header.masthead div.container {
   z-index: 10;
 }
 
-@media (min-width: 992px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 72px;
-    padding-bottom: 0;
-  }
-  header.masthead p {
-    font-size: 1.15rem;
-  }
+header.masthead p {
+  font-size: 1.15rem;
 }
 
 #portfolio .container-fluid {

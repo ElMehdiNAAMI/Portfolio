@@ -46,14 +46,14 @@ hr.light {
 #element {
   position: absolute;
   z-index: 0;
-  left: 5vw;
-  top: 22vh;
-  height: 60vh;
-  width: 25vw;
+  left: 33vw;
+  top: 10vh;
+  height: 55vh;
+  width: 30vw;
   -webkit-animation: nudge 5s linear infinite alternate;
   animation: nudge 5s linear infinite alternate;
 
-  border: 1vw solid rgba($primary, 0.3);
+  border: 1vw solid rgba($primary, 0.4);
 }
 
 @-webkit-keyframes nudge {
