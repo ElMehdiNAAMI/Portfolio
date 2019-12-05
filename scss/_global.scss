@@ -39,3 +39,50 @@ hr.light {
 .page-section {
   padding: 5rem 0;
 }
+//nav hover
+.nav-link:hover {
+  transform: translate(0, -5px);
+}
+#element {
+  position: absolute;
+  z-index: 0;
+  left: 5vw;
+  top: 22vh;
+  height: 60vh;
+  width: 25vw;
+  -webkit-animation: nudge 5s linear infinite alternate;
+  animation: nudge 5s linear infinite alternate;
+
+  border: 1vw solid rgba($primary, 0.3);
+}
+
+@-webkit-keyframes nudge {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+  }
+  80% {
+    -webkit-transform: translate(-10px, 10px);
+    transform: translate(10px, 10px);
+  }
+}
+@keyframes nudge {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(10px, 0);
+    transform: translate(10px, 10px);
+  }
+  80% {
+    -webkit-transform: translate(-10px, 0);
+    transform: translate(-10px, 10px);
+  }
+}
