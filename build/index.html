@@ -6,17 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content=" I am a web developer that creates beautiful, responsive and performant web apps."/>
+    <meta name="keywords" content="HTML,CSS,JavaScript,Web dev">
+    <meta name="author" content="NAAMI EL MEHDI"/>
 
-    <title>NEM TECH - WEB DEV</title>
+    <title>LMEHDI - WEB DEV</title>
 
     <!-- Font Awesome Icons -->
-    <link
-      href="vendor/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <script src="https://kit.fontawesome.com/1481211f3c.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
     <link
@@ -43,12 +40,21 @@
       class="navbar navbar-expand-lg navbar-light fixed-top py-3 "
       id="mainNav"
     >
-      <div class="container  ">
-        <a class="navbar-brand nav-link js-scroll-trigger  " href="#page-top"
-          ><h1 class="text-uppercase font-weight-bold" style="font-size: 1rem">
-            NEM TECH
-          </h1></a
-        >
+      <div class="container ">
+        <div class="row">
+          
+            <div class="col-xm">
+
+        <a class="navbar-brand nav-link js-scroll-trigger  " href="https://github.com/ElMehdiNAAMI" target="_blank">
+          <i class="fab fa-github fa-2x  "></i>
+        </a>
+        </div>
+        <div class="col-xm">
+          <a class="navbar-brand nav-link js-scroll-trigger  " href="https://www.linkedin.com/in/el-mehdi-naami-895846199/" target="_blank">
+            <i class="fab fa-linkedin fa-2x  "></i>
+          </a>
+        </div>
+      </div>
 
         <button
           class="navbar-toggler navbar-toggler-right"
@@ -67,17 +73,20 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services"
-                >Services</a
+              <a class="nav-link js-scroll-trigger" href="#projects"
+                >My Projects</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item ">
               <a
                 class="nav-link js-scroll-trigger d-flex "
-                href="./Resume.pdf"
+                href="./resume/NAAMI El Mehdi resume.pdf"
                 download
-                ><span class="align-self-start">Resume </span>
-                <i class="far fa-2x fa-file-pdf"></i
+                ><span class="align-self-start" style="margin-right:5px">Resume </span>
+                <i class="far fa-2x fa-file-pdf" ></i
               ></a>
             </li>
           </ul>
@@ -123,47 +132,99 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="text-secondary mt-0">We've got what you need!</h2>
+            <h2 class="text-secondary mt-0">About Me</h2>
             <hr class="divider my-4" />
             <p class="text-secondary mb-4">
-              Start Bootstrap has everything you need to get your new website up
-              and running in no time! Choose one of our open source, free to
-              download, and easy to use themes! No strings attached!
+              I am a web developer that creates beautiful, responsive and performant web apps. <br/>
+              When working with me, you can rest assured, you will get all the expected stuff like a great professional service and a fast turn around.
             </p>
             <a
               class="btn btn-primary btn-xl js-scroll-trigger text-secondary"
-              href="#services"
-              >Get Started!</a
+              href="./resume/NAAMI El Mehdi resume.pdf"
+                download
+              >download my resume!</a
             >
           </div>
         </div>
       </div>
+      
     </section>
 
-    <!-- Services Section -->
-    <section class="page-section text-secondary" id="services">
-      <h2 class="text-center mt-0">My Portfolios</h2>
+    <!-- Projects Section -->
+    <section class="page-section text-secondary" id="projects">
+      <h2 class="text-center mt-0">My Latest projects</h2>
       <hr class="divider my-4" />
       <div class="container-fluid p-0">
         <div class="row no-gutters justify-content-center">
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="view overlay zoom">
-              <img
-                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg"
-                class="img-fluid "
-                alt="smaple image"
-              />
-              <div class="mask flex-center">
-                <p class="white-text">Zoom effect</p>
+            <div class="hovereffect ">
+              <img class="img-responsive" style="margin: 0 auto" src="./img/Projects/greenrecipes.PNG" alt="greenrecipes">
+              <div class="overlay">
+                <h2>Greenrecipes</h2>
+                <button type="button" class="info" data-toggle="modal" data-target="#myModal">See more</button>
               </div>
             </div>
           </div>
+        
+          
+          
         </div>
       </div>
     </section>
+    
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog" style="margin-top:60px;"  >
+      <div class="modal-dialog" style=" max-width:none; width: 90% ; margin:0 auto;"  >
+    
+        <!-- Modal content-->
+        <div class="modal-content text-secondary ">
+          <div class="modal-header" >
+    
+            <h4 class="modal-title" style="text-align: center; width: 100%;">Overview</h4>
+          </div>
+          <div class="modal-body container ">
+            <div class="row">
+              <div class=" col-md-6 col-xs-12 mb-3 " >
+                <p class=" mx-2">
+              React crud web app that allows adding, saving and deleting lists of foods based on the macronutrients they provide. <br/> The app
+              takes then a food combination from the saved food list as a search query, and sends a get request to a public Recipe
+              Search API.<br />
+              The app also features adding details to recipes (eg: Peanut-Free, Sugar-Free, Alcohol-Free) in a placeholder.<br />
+              All the recipes are filtered and 100% vegan.</p>
+              <h5 class="mx-2">Key used technologies:</h5>
+              <ul class="mx-2">
+                <li>React</li>
+                <li>React hooks</li>
+                <li>MATERIAL-UI</li>
+                <li>Public REST API</li>
+              </ul>
+              </div>
+              <div class=" col-md-6 col-xs-12 text-center " >
+              <img src="./img/Projects/greenrecipes.gif" alt="DEMO" style="width: 100%;">
+              <a class="text-decoration-none" href="https://greenrecipes.xyz/" target="_blank">
+                <button class="btn btn-primary btn-block mt-2 text-secondary">
+                  View project website
+                </button>
+              </a>
+              <a class="text-decoration-none" href="https://github.com/ElMehdiNAAMI/VeganReactApp" target="_blank">
+                <button class="btn btn-primary btn-block mt-2 text-secondary">
+                  View project code
+                </button>
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
     <!-- Contact Section -->
-    <section class=" page-section  bg-secondary text-white ">
+    <section class=" page-section  bg-secondary text-white " id="contact">
       <div class="container-fluid text-center">
         <h2 class="mt-2">Let's Get In Touch!</h2>
         <hr class="divider my-4" />
@@ -171,34 +232,35 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="container text-left">
-              <form>
+              <form name="contact" method="POST" data-netlify="true">
                 <div class="form-group">
-                  <label for="InputName">NAME</label>
+                  <label for="InputName" style="width: 100%;">NAME
                   <input
                     type="text"
                     class="form-control"
                     placeholder="Enter your Name"
-                  />
+                  /></label>
                 </div>
                 <div class="form-group">
-                  <label for="InputEmail">Email address</label>
+                  <label for="InputEmail" style="width: 100%;">Email address
                   <input
                     type="email"
                     class="form-control"
                     id="InputEmail"
                     aria-describedby="emailHelp"
                     placeholder="Enter your email"
-                  />
+                  /></label>
                 </div>
                 <div class="form-group ">
-                  <label for="InputMessage">Message</label>
+                  <label for="InputMessage" style="width: 100%;">Message
                   <textarea
                     class="form-control text-secondary"
                     id="FormControlTextarea"
                     rows="3"
                     placeholder="Leave me a message"
-                  ></textarea>
+                  ></textarea></label>
                 </div>
+                
 
                 <button
                   type="submit"
@@ -221,29 +283,28 @@
                 </div>
               </div>
               <div class="row mb-4  ">
-                <div class="col-sm-6 mr-auto text-center ">
+                <div class="col-sm-6 mr-auto text-center mb-3 text-muted">
                   <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                  <div style="white-space: nowrap">(202) 555-0149</div>
+                  <div >+ (212) 627 564058</div>
                 </div>
-                <div class="col-sm-6 mr-auto text-center ">
+                <div class="col-sm-6 mr-auto text-center mb-3 text-muted ">
                   <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                  <!-- Make sure to change the email address in anchor text AND the link below! -->
-                  <div class="text-center">contact@yourwebsite.com</div>
+                  <div >naami.em@gmail.com</div>
                 </div>
               </div>
               <div class="row mb-4">
-                <div class="col-sm-6 mr-auto text-center">
-                  <a class="d-block" href="https://github.com/" target="_blank"
+                <div class="contact-link col-sm-6 mr-auto text-center mb-3 text-muted">
+                  <a class=" text-decoration-none " href="https://github.com/ElMehdiNAAMI" target="_blank"
                     ><i class="fab fa-github fa-3x mb-3 text-muted"></i>
                     <!-- Make sure to change the email address in anchor text AND the link below! -->
-                    <span class="d-block">My GitHub</span>
+                    <div class="text-muted">My GitHub</div>
                   </a>
                 </div>
-                <div class="col-sm-6 mr-auto text-center">
-                  <a class="d-block" href="instagram.com" target="_blank"
+                <div class=" contact-link col-sm-6 mr-auto text-center mb-3 text-muted">
+                  <a  class=" text-decoration-none" href="https://www.linkedin.com/in/el-mehdi-naami-895846199/" target="_blank"
                     ><i class="fab fa-linkedin fa-3x mb-3 text-muted"></i>
                     <!-- Make sure to change the email address in anchor text AND the link below! -->
-                    <span class="d-block">My Linkedin</span>
+                    <div class="text-muted" >My Linkedin</div>
                   </a>
                 </div>
               </div>
